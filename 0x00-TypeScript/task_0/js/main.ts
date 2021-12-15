@@ -7,29 +7,29 @@ interface Student {
     location: string;
   }
   
-  const studentA: Student = {
+  const student1: Student = {
     firstName: 'Nasser',
     lastName: 'Abuchaibe',
     age: 38,
-    location: 'Guajira',
+    location: 'San Marcos',
   }
   
-  const studentB: Student = {
-    firstName: 'Marlom',
-    lastName: 'Garcia',
-    age: 19,
-    location: 'Medellin',
+  const student2: Student = {
+    firstName: 'Siad',
+    lastName: 'Abuchaibe',
+    age: 9,
+    location: 'San Marcos',
   }
   
-  const studentList = [studentA, studentB];
+  const studentList: Array<Student> = [student1, student2];
   
-  const table = document.createElement('table');
-  const tbody = document.createElement('tbody');
+  const table: HTMLTableElement = document.createElement('table');
+  const tbody: HTMLTableSectionElement = document.createElement('tbody');
   
   studentList.forEach((obj) => {
-    const row = document.createElement('tr');
-    const cellName = document.createElement('td');
-    const cellLocation = document.createElement('td');
+    const row: HTMLTableRowElement  = document.createElement('tr');
+    const cellName: HTMLTableCellElement = document.createElement('td');
+    const cellLocation: HTMLTableCellElement = document.createElement('td');
     cellName.textContent = obj.firstName;
     cellLocation.textContent = obj.location;
     row.appendChild(cellName);
@@ -37,4 +37,4 @@ interface Student {
     tbody.appendChild(row);
   });
   table.appendChild(tbody);
-  document.body.appendChild(table);
+  document.body.appendChild(table); 

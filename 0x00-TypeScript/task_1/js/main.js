@@ -1,4 +1,4 @@
-// Creating a teacher and a director
+// Assigning a director and teacher
 var teacher3 = {
     firstName: 'John',
     fullTimeEmployee: false,
@@ -15,7 +15,7 @@ var director1 = {
     numberOfReports: 17
 };
 console.log(director1);
-// returns a Teacher's name in this format: S. Cheung
+// returns in format J. Doe
 function printTeacher(firstName, lastName) {
     return firstName[0] + ". " + lastName;
 }
@@ -35,6 +35,6 @@ var StudentClass = /** @class */ (function () {
     return StudentClass;
 }());
 // creating instance of StudentClass
-var studentClass = new StudentClass('Siad', 'Abuchaibe');
+var studentClass = new StudentClass('Blaymar', 'Garcia');
 console.log(studentClass.displayName());
 console.log(studentClass.workOnHomework());
